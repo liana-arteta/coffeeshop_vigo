@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.liana</groupId>
-    <artifactId>coffeshop_vigo</artifactId>
+    <artifactId>coffeeshop_vigo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>coffeshop_vigo</name>
-    <description>coffeshop_vigo</description>
+    <name>coffeeshop_vigo</name>
+    <description>coffeeshop_vigo</description>
     <url/>
     <licenses>
         <license/>

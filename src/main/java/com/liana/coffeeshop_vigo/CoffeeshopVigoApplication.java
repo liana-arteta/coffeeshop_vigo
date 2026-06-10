@@ -1,13 +1,13 @@
-package com.liana.coffeshop_vigo;
+package com.liana.coffeeshop_vigo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CoffeshopVigoApplication {
+public class CoffeeshopVigoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CoffeshopVigoApplication.class, args);
+        SpringApplication.run(CoffeeshopVigoApplication.class, args);
     }
 
 }

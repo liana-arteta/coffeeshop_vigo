@@ -1,1 +1,1 @@
-# coffeshop_vigo
+# coffeeshop_vigo
