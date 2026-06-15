@@ -20,4 +20,9 @@ public class CoffeeshopController {
     public List<Coffeeshop> listCoffeeshpps (){
         return coffeeshopService.getAllCoffeeshop();
     }
+
+    @GetMapping("/api/import")
+    public String getData(){
+        return coffeeshopService.getDataCoffeeshopsVigo();
+    }
 }
