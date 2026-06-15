@@ -32,7 +32,6 @@ public class Service {
         this.serviceId = serviceId;
     }
 
-
     public String getType() {
         return type;
     }

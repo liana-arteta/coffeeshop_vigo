@@ -58,10 +58,6 @@ public class Coffeeshop {
         return coffeeshopId;
     }
 
-    public void setCoffeshopId(Integer coffeshopId) {
-        this.coffeeshopId = coffeshopId;
-    }
-
     public String getName() {
         return name;
     }

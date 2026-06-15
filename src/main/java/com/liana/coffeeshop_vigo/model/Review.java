@@ -34,7 +34,6 @@ public class Review {
         return reviewId;
     }
 
-
     public LocalDateTime getDate() {
         return date;
     }
