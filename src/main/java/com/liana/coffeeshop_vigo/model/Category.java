@@ -13,8 +13,10 @@ public class Category {
     private Integer categoryId;
     @Column (nullable = false)
     private String name;
+    /*
     @ManyToMany(mappedBy = "categories")
     private Set<Coffeeshop> coffeeshops = new java.util.HashSet<>();
+    */
 
     // Constructor
 
@@ -34,14 +36,6 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Set<Coffeeshop> getCoffeeshops() {
-        return coffeeshops;
-    }
-
-    public void setCoffeeshops(Set<Coffeeshop> coffeeshops) {
-        this.coffeeshops = coffeeshops;
     }
 
 

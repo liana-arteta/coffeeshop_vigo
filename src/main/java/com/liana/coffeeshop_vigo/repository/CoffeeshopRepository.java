@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CoffeeshopRepository extends JpaRepository<Coffeeshop, Integer> {
+    boolean existsByOsmId(Long osmId);
 }

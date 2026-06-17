@@ -26,14 +26,13 @@ public class Coffeeshop {
     private  String openingHours;
     @Column (length = 100)
     private String neighborhood;
+    @Column(name = "osm_id", unique = true)
+    private Long osmId;
 
-    @ManyToMany
-    @JoinTable(
-            name = "coffeeshop_category",
-            joinColumns = @JoinColumn(name ="coffeeshop_id"),
-            inverseJoinColumns = @JoinColumn(name = "category_id")
-    )
-    private Set<Category> categories = new java.util.HashSet<>();
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
 
     @ManyToMany
     @JoinTable(
@@ -54,9 +53,7 @@ public class Coffeeshop {
 
     // Getters and Setters
 
-    public Integer getCoffeshopId() {
-        return coffeeshopId;
-    }
+    public Integer getCoffeshopId() { return coffeeshopId; }
 
     public String getName() {
         return name;
@@ -122,13 +119,7 @@ public class Coffeeshop {
         this.neighborhood = neighbordhood;
     }
 
-    public Set<Category> getCategories() {
-        return categories;
-    }
 
-    public void setCategories(Set<Category> categories) {
-        this.categories = categories;
-    }
 
     public Set<Service> getServices() {
         return services;
@@ -144,5 +135,21 @@ public class Coffeeshop {
 
     public void setReviews(Set<Review> reviews) {
         this.reviews = reviews;
+    }
+
+    public Long getOsmId() {
+        return osmId;
+    }
+
+    public void setOsmId(Long osmId) {
+        this.osmId = osmId;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
